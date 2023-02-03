@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EtagereComponent } from './etagere/etagere.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { EtagereComponent } from './etagere/etagere.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule, // Module NgBootstrap
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
