@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {LikeHate} from "../../../models/like-hate";
 
 @Component({
@@ -6,6 +6,14 @@ import {LikeHate} from "../../../models/like-hate";
   templateUrl: './like-hate.component.html',
 })
 export class LikeHateComponent {
+
+  // @Input() likeHate: LikeHate = {
+  //   like: true,
+  //   hate: true
+  // }
+  // hateDisable = false;
+
+
   @Output() evtLikeHate = new EventEmitter<LikeHate>();
 
   like(){
@@ -15,4 +23,6 @@ export class LikeHateComponent {
   hate(){
     this.evtLikeHate.emit(LikeHate.Hate);
   }
+
+
 }

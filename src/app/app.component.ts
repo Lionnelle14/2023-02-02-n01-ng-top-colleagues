@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LikeHate} from "./models/like-hate";
 
 
 
@@ -7,7 +8,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
+
   title = 'top-colleagues';
-  isCollapsed= true;
+
+  // activedesactive: LikeHate = {
+  //   like: true
+
+
+  // }
+
 }

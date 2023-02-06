@@ -8,7 +8,7 @@ import {LikeHate} from "../../../models/like-hate";
 })
 export class ColleagueComponent {
   @Input() colleague : Colleague = {
-    photo: 'https://picsum.photos/id/237/200/300',
+    photo: 'https://randomuser.me/api/portraits/men/1.jpg',
     pseudo: 'Milou',
     score: 10
   };
@@ -17,6 +17,7 @@ export class ColleagueComponent {
 
     if(event == LikeHate.Like) {
       this.colleague.score++
+
     } else if(event == LikeHate.Hate) {
       this.colleague.score--
     }

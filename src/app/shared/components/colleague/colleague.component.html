@@ -1,6 +1,9 @@
+<div class="card align-content-center">
+  <img [src] = "colleague.photo" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{colleague.pseudo}}</h5>
+    <p class="card-text">{{colleague.score}}</p>
+  </div>
 
-<img [src] = "colleague.photo">
-<p>{{colleague.pseudo}}</p>
-<p>{{colleague.score}}</p>
-
-<tc-like-hate (evtLikeHate)="ClickLikeHate($event)"></tc-like-hate>
+  <tc-like-hate (evtLikeHate)="ClickLikeHate($event)"></tc-like-hate>
+</div>

@@ -1,3 +1,4 @@
 export enum LikeHate {
-  Like, Hate
+  Like,
+  Hate
 }
