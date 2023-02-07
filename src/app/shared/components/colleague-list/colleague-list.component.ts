@@ -8,10 +8,15 @@ import {ColleagueService} from "../../../providers/colleague.service";
   styleUrls: ['./colleague-list.component.scss']
 })
 export class ColleagueListComponent {
-  colleagues: Colleague[];
+  colleagues: Colleague[] = [];
 
   constructor(private colleagueService: ColleagueService) {
-    this.colleagues = this.colleagueService.list();
+    this.init();
+  }
+
+  init(){
+    this.colleagueService.list()
+      .subscribe(tabColleagues => this.colleagues = tabColleagues);
   }
 
 }

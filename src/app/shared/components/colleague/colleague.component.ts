@@ -13,13 +13,13 @@ export class ColleagueComponent {
     score: 10
   };
 
-  ClickLikeHate(event: LikeHate){
-
-    if(event == LikeHate.Like) {
-      this.colleague.score++
-
-    } else if(event == LikeHate.Hate) {
-      this.colleague.score--
-    }
-  }
+  // ClickLikeHate(event: LikeHate){
+  //
+  //   if(event == LikeHate.Like) {
+  //     this.colleague.score++
+  //
+  //   } else if(event == LikeHate.Hate) {
+  //     this.colleague.score--
+  //   }
+  // }
 }

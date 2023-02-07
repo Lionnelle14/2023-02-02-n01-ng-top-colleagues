@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {LikeHate} from "./models/like-hate";
-
-
+import {ColleagueService} from "./providers/colleague.service";
 
 @Component({
   selector: 'tc-root',
@@ -12,11 +11,5 @@ import {LikeHate} from "./models/like-hate";
 export class AppComponent {
 
   title = 'top-colleagues';
-
-  // activedesactive: LikeHate = {
-  //   like: true
-
-
-  // }
 
 }
