@@ -5,6 +5,9 @@ import { ColleagueComponent } from '../shared/components/colleague/colleague.com
 import { ColleagueListComponent } from '../shared/components/colleague-list/colleague-list.component';
 import { CounterComponent } from '../shared/components/counter/counter.component';
 import {AngularFontAwesomeModule} from "angular-font-awesome";
+import { CreateColleagueFormsComponent } from './components/create-colleague-forms/create-colleague-forms.component';
+import {FormsModule} from "@angular/forms";
+import { FirstLastValidatorDirective } from './validators/first-last-validator.directive';
 
 
 
@@ -13,16 +16,20 @@ import {AngularFontAwesomeModule} from "angular-font-awesome";
     LikeHateComponent,
     ColleagueComponent,
     ColleagueListComponent,
-    CounterComponent
+    CounterComponent,
+    CreateColleagueFormsComponent,
+    FirstLastValidatorDirective
   ],
     exports: [
         LikeHateComponent,
         ColleagueComponent,
         ColleagueListComponent,
-        CounterComponent
+        CounterComponent,
+        CreateColleagueFormsComponent
     ],
     imports: [
         CommonModule,
+        FormsModule,
     ]
 })
 export class SharedModule { }

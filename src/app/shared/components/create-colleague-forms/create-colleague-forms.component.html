@@ -1,0 +1,36 @@
+<div>
+  <form tcFirstLastValidator #fStatus="ngForm">
+    <div class="mb-4">
+      <label class="col-2">Pseudo </label>
+      <input class="col-8" type="text" name="pseudo" [(ngModel)]="colleagueToCreate.pseudo" #pseudoStatus="ngModel" required>
+      <p *ngIf="pseudoStatus.dirty && pseudoStatus.invalid">Champ pseudo obbligatoire</p>
+    </div>
+
+    <div class="mb-4">
+      <label class="col-2">Nom  </label>
+      <input class="col-8" type="text" name="nom" [(ngModel)]="colleagueToCreate.last" required minlength="2" #nomStatus="ngModel">
+      <p *ngIf="nomStatus.dirty && nomStatus.invalid">Nom obbligatoire</p>
+    </div>
+
+    <div class="mb-4">
+      <label class="col-2"> Prenom</label>
+      <input class="col-8" type="text" name="prenom" [(ngModel)]="colleagueToCreate.first" required minlength="2" #prenomStatus="ngModel">
+      <p *ngIf="prenomStatus.dirty && prenomStatus.invalid">Prenom obbligatoire</p>
+    </div>
+
+    <div class="mb-4">
+      <label class="col-2">Photo URL  </label>
+      <input class="col-8" type="url" name="photo" [(ngModel)]="colleagueToCreate.photo" #photoStatus="ngModel" required>
+      <p *ngIf="photoStatus.dirty && photoStatus.invalid">Photo obbligatoire</p>
+    </div>
+
+    <div >
+      <button class="col-md-3 offset-md-5" [disabled]="fStatus.invalid" (click)="valid()">Ajouter</button>
+    </div>
+
+<!--    {{colleagueToCreate | json}}-->
+
+  </form>
+</div>
+
+
