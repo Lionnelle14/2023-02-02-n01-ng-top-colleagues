@@ -4,9 +4,11 @@ import {ColleagueListComponent} from './shared/components/colleague-list/colleag
 import {
   CreateColleagueFormsComponent
 } from "./shared/components/create-colleague-forms/create-colleague-forms.component";
+import {DetailColleagueComponent} from "./shared/components/detail-colleague/detail-colleague.component";
 
 
 export const routes: Routes = [
+  {path: 'colleagues/:pseudo', component: DetailColleagueComponent},
   {path: 'colleagues', component: ColleagueListComponent},
   {path: 'form-template', component: CreateColleagueFormsComponent},
   {path: '', pathMatch: 'full', redirectTo: '/colleagues'}

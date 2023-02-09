@@ -8,7 +8,8 @@ import {CounterComponent} from '../shared/components/counter/counter.component';
 import {CreateColleagueFormsComponent} from './components/create-colleague-forms/create-colleague-forms.component';
 import {FormsModule} from "@angular/forms";
 import {MenuComponentComponent} from './components/menu-component/menu-component.component';
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterLinkActive} from "@angular/router";
+import { DetailColleagueComponent } from './components/detail-colleague/detail-colleague.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {RouterLink} from "@angular/router";
     CounterComponent,
     CreateColleagueFormsComponent,
     MenuComponentComponent,
+    DetailColleagueComponent,
   ],
   exports: [
     LikeHateComponent,
@@ -31,6 +33,7 @@ import {RouterLink} from "@angular/router";
     CommonModule,
     FormsModule,
     RouterLink,
+    RouterLinkActive,
   ]
 })
 export class SharedModule {

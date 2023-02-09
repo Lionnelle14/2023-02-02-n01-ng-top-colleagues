@@ -1,7 +1,8 @@
 <div class="card align-content-center">
-  <img [src] = "colleague.photo" class="card-img-top" alt="...">
+  <img [src]="colleague.photo" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{colleague.pseudo | uppercase}}</h5>
+    <h5 class="card-title"><a routerLink="/colleagues/{{colleague.pseudo}}"> {{colleague.pseudo | uppercase}}</a>
+    </h5>
     <p class="card-text">{{colleague.score}}</p>
   </div>
 
