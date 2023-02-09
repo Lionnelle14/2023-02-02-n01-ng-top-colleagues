@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import {HttpClientModule} from "@angular/common/http";
 import {CreateColleagueModule} from "./pages/create-colleague/create-colleague.module";
 import {FormsModule} from "@angular/forms";
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {FormsModule} from "@angular/forms";
     SharedModule,
     HttpClientModule,
     CreateColleagueModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
